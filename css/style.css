@@ -1,0 +1,233 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+
+    /* Header */
+    header {
+      background: #0A400C;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+      padding-left: 30px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    nav ul li a:hover {
+      background: #0d7c11;
+    }
+
+    /* Hero */
+    .hero {
+      background: #819067;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    .search-box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .search-box input {
+      padding: 12px;
+      width: 300px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    .search-box button {
+      padding: 12px 20px;
+      border: none;
+      background: #0A400C;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+    }
+    .search-box button:hover {
+      background: #c2185b;
+    }
+
+    /* Container umum */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Section Recent Posts */
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .recent-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .post-card {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    .post-card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .post-card h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    /* Welcome Box */
+    .welcome {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid Consoles */
+    .consoles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .console-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+    }
+    .console-card img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .console-card:hover {
+      border-color: green;
+    }
+
+  footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1abc9c; /* warna saat hover */
+}
+
+.request-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.request-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.games-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.game-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.game-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.genre {
+  font-size: 14px;
+  color: #666;
+}
+.size, .year {
+  font-size: 13px;
+  color: #444;
+}
+
