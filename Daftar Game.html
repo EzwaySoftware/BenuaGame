@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Game Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+
+    /* Header */
+    header {
+      background: #0A400C;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+      padding-left: 30px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    nav ul li a:hover {
+      background: #0A400C;
+    }
+
+    /* Hero */
+    .hero {
+      background: #819067;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    .search-box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .search-box input {
+      padding: 12px;
+      width: 300px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    .search-box button {
+      padding: 12px 20px;
+      border: none;
+      background: #0A400C;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+    }
+    .search-box button:hover {
+      background: #c2185b;
+    }
+
+    /* Container umum */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Section Recent Posts */
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .recent-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .post-card {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    .post-card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .post-card h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    /* Welcome Box */
+    .welcome {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid Consoles */
+    .consoles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .console-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+    }
+    .console-card img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+  footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1abc9c; /* warna saat hover */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">BENUA GAME</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Daftar Game</a></li>
+        <li><a href="#">Request</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>PLAY VIDEO GAME ROMS<br>ON YOUR COMPUTER OR PHONE</h1>
+    <div class="search-box">
+      <input type="text" placeholder="Enter ROM name for search">
+      <button>Search</button>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div class="container">
+    <!-- Recent Posts -->
+    <div>
+      <div class="section-title">Most Recent Posts</div>
+      <div class="recent-posts">
+        <div class="post-card">
+          <img src="post1.jpg" alt="Post 1">
+          <h3>Best PSP Emulator 2025</h3>
+        </div>
+        <div class="post-card">
+          <img src="post2.jpg" alt="Post 2">
+          <h3>What is ROM Dumping?</h3>
+        </div>
+        <div class="post-card">
+          <img src="post3.jpg" alt="Post 3">
+          <h3>Yakuza Kiwami Review</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome Box -->
+    <div class="welcome">
+      <h2>Welcome to MyGameSite</h2>
+      <p>
+        Download free ROMs and ISOs for various classic consoles.
+        Here you can explore thousands of retro games and emulators.
+      </p>
+    </div>
+
+    <!-- Consoles Grid -->
+    <div>
+      <div class="section-title">Platform Games</div>
+      <div class="consoles">
+        <div class="console-card"><img src="https://romsfun.com/wp-content/uploads/2021/04/playstation-logotype.png" alt=""><p>PlayStation</p></div>
+        <div class="console-card"><img src="https://romsfun.com/wp-content/uploads/2020/08/playstation-2.png" alt=""><p>PlayStation 2</p></div>
+        <div class="console-card"><img src="https://romsfun.com/wp-content/uploads/2021/04/ps3icon.png" alt=""><p>PlayStation 3</p></div>
+        <div class="console-card"><img src="https://romsfun.com/wp-content/uploads/2020/08/playstation-4.png" alt=""><p>PlayStation 4</p></div>
+        <div class="console-card"><img src="https://romsfun.com/wp-content/uploads/2021/04/psp-icon-1.png" alt=""><p>PlayStation Portable</p></div>
+        <div class="console-card"><a href=""></a><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Pc_game_logo.png" alt=""><p>PC/Laptop</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <p>© 2025 Toko Saya. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/tokonyasamarinda" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/tokonyasamarinda" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/6285122662204" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://shopee.co.id/tokonyasamarinda" target="_blank"><i class="fas fa-shopping-bag"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/4d8f193dfa.js" crossorigin="anonymous"></script>
+</body>
+</html>
