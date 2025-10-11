@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Game Site</title>
+  <link rel="stylesheet" href="PC.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">BENUA GAME</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Daftar Game</a></li>
+        <li><a href="Request.html">Request</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="game-container">
+    <h1 style="text-align:center;">Daftar Game PC</h1>
+
+    <div class="search-box">
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Masukkan judul game">
+        <button onclick="applyFilters()">Search</button>
+      </div>
+
+      <div class="filter-bar">
+        <span class="filter-label">FILTER</span>
+        <select id="order" onchange="applyFilters()">
+          <option value="">Order</option>
+          <option value="az">A - Z</option>
+          <option value="za">Z - A</option>
+        </select>
+
+        <select id="genre" onchange="applyFilters()">
+          <option value="">Genre</option>
+          <option value="action">Action</option>
+          <option value="rpg">RPG</option>
+          <option value="adventure">Adventure</option>
+          <option value="shooter">Shooter</option>
+        </select>
+
+        <select id="sort" onchange="applyFilters()">
+          <option value="">Sort by</option>
+          <option value="release_year">Tahun Rilis</option>
+          <option value="rating">Rating</option>
+          <option value="size">Size</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div id="game-grid" class="game-grid"></div>
+
+    <div id="pagination" class="pagination"></div>
+    
+  </div>
+  
+
+  <!-- PapaParse untuk membaca CSV -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="PC.js"></script>
+
+  <!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <p>© 2025 Toko Saya. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/tokonyasamarinda" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/tokonyasamarinda" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/6285122662204" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://shopee.co.id/tokonyasamarinda" target="_blank"><i class="fas fa-shopping-bag"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/4d8f193dfa.js" crossorigin="anonymous"></script>
+<script src="../js/Load.js"></script>
+</body>
+</html>
