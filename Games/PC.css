@@ -13,24 +13,30 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      box-sizing: border-box;
     }
     header .logo {
       font-size: 22px;
       font-weight: bold;
-      padding-left: 30px;
+      padding-left: 15px;
     }
     nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
-      gap: 20px;
+      gap: 15px;
+      flex-wrap: wrap;
     }
     nav ul li a {
       color: #fff;
       text-decoration: none;
-      padding: 8px 12px;
+      padding: 8px 10px;
       border-radius: 4px;
+      font-size: 14px;
     }
     nav ul li a:hover {
       background: #0d7c11;
@@ -47,9 +53,10 @@ h1 {
 }
 
 .search-box {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 90%;
   max-width: 1100px;
+  margin: 0 auto 20px;
+  box-sizing: border-box;
 }
 
 .search-bar {
@@ -88,7 +95,9 @@ h1 {
   padding: 10px;
   border-radius: 4px;
   align-items: center;
-  max-width: 1100px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .filter-label {
@@ -127,8 +136,8 @@ h1 {
   justify-content: space-between;
 
   width: 100%;
-  max-width: 230px;   /* biar nggak terlalu melebar */
-  margin: 0 auto;     /* tengah kalau ada space lebih */
+  max-width: 230px;
+  margin: 0 auto;
 }
 
 /* Gambar */
@@ -249,23 +258,145 @@ footer {
   .game-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .game-card {
+    max-width: none;
+  }
+  header {
+    padding: 12px 20px;
+  }
+  header .logo {
+    font-size: 18px;
+  }
+  nav ul {
+    gap: 12px;
+  }
+  nav ul li a {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+  .search-bar button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
 }
 
 /* mobile sedang */
 @media (max-width: 768px) {
   .game-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  header {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  header .logo {
+    font-size: 16px;
+    padding-left: 0;
+  }
+  nav ul {
+    gap: 10px;
+    justify-content: center;
+  }
+  nav ul li a {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .search-bar {
+    flex-direction: column;
+  }
+  .search-bar input {
+    border-radius: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .search-bar button {
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+  }
+  .filter-bar {
+    gap: 8px;
+    padding: 8px;
+  }
+  .filter-bar select {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .filter-label {
+    margin-right: 5px;
+  }
+  .game-card {
+    max-width: none;
+    width: 170px;
+    height: 280px;
+    padding: 10px;
+  }
+  .game-card img {
+    height: 170px;
+    object-fit: cover;
+  }
+  .title {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
+  header {
+    padding: 8px 10px;
+  }
+  header .logo {
+    font-size: 14px;
+  }
+  nav ul {
+    gap: 8px;
+  }
+  nav ul li a {
+    padding: 4px 6px;
+    font-size: 11px;
+  }
   .game-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .search-bar input {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .search-bar button {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .filter-bar {
+    gap: 6px;
+    padding: 6px;
+    flex-direction: column;
+  }
+  .filter-label {
+    margin-right: 0;
+  }
+  .filter-bar select {
+    font-size: 11px;
+    width: 100%;
   }
   .game-card {
-    width: 250px;
-    height: 350px;
+    max-width: 170px;
+    height: 260px;
+    padding: 8px;
   }
-
-  
+  .game-card img {
+    height: 150px;
+    object-fit: cover;
+  }
+  .title {
+    font-size: 12px;
+    margin: 5px 0 2px;
+  }
+  .platform {
+    font-size: 11px;
+  }
+  .info-item {
+    font-size: 10px;
+  }
 }
